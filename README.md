@@ -4,7 +4,7 @@
 active development. New projects and features are being added regularly.
 
 ## 📖 About This Repository
-A collection of 5 MySQL mini-projects showcasing relational database design,
+A collection of 3 MySQL mini-projects showcasing relational database design,
 triggers, stored procedures, complex queries, DDL, DML, Joins, and Clauses in a banking/finance context. 
 
 This repository serves as a practical portfolio demonstrating my ability to design scalable, secure,
