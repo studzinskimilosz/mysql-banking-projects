@@ -33,9 +33,9 @@ A foundational database system simulating core banking operations. It manages cu
 ### 2. Personal Budget Tracker 💰 
 A database system designed to track daily expenses and incomes. It systematically categorizes cash flows and uses a MySQL `VIEW` to automatically generate monthly financial summaries, simulating the core logic behind personal finance apps.
 
-### 3. 🚧 Project 3 (Coming Soon)
+### 3. Fraud Detection System 👀 <span style="color: red;">***(start date: 25 Aug. 2026)***</span>
 
-#### AND MORE...
+#### ***AND MORE...***
 
 ## 🚀 How to Navigate
 Each project is contained within its own directory. Inside each folder, you will find:
