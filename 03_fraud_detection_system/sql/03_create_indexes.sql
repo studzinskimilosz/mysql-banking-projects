@@ -9,3 +9,9 @@ ON Transactions(account_id);
 
 CREATE INDEX idx_transactions_card
 ON Transactions(card_id);
+
+CREATE INDEX idx_transactions_merchant
+ON Transactions(merchant_id);
+
+CREATE INDEX idx_transactions_timestamp
+ON Transactions(transaction_time);
