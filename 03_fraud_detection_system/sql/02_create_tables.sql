@@ -53,3 +53,23 @@ CREATE TABLE Merchants (
     city VARCHAR(50) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
+
+CREATE TABLE Transactions (
+    transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    account_id INT NOT NULL,
+    card_id INT,
+    merchant_id INT NOT NULL,
+    transaction_type ENUM('CARD_PAYMENT', 'ATM_WITHDRAWAL', 'TRANSFER', 'ONLINE_PAYMENT', 'DIRECT_DEBIT', 'BANK_TRANSFER', 'REFUND'),
+    amount DECIMAL(15,2) NOT NULL,
+    currency CHAR(3) NOT NULL,
+    transaction_time TIMESTAMP NOT NULL,
+    country ENUM('PL', 'DE', 'GB', 'US', 'FR', 'ES') NOT NULL,
+    city VARCHAR(50),
+    status ENUM('PENDING', 'COMPLETED', 'FAILED', 'REVERSED'),
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    FOREIGN KEY (account_id) REFERENCES Accounts(account_id),
+    FOREIGN KEY (card_id) REFERENCES Cards(card_id),
+    FOREIGN KEY (merchant_id) REFERENCES Merchants(merchant_id),
+    CHECK (amount >= 0)
+);
