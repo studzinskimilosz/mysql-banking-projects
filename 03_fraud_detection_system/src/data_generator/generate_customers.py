@@ -2,6 +2,7 @@ import locale
 
 from faker import Faker
 import random
+import pandas as pd
 
 fake = Faker("pl_PL")
 
@@ -31,3 +32,6 @@ for i in range(100):
 
     customers.append(customer)
 
+
+df = pd.DataFrame(customers)
+df.to_csv("customers.csv", index=False)
