@@ -49,7 +49,7 @@ CREATE TABLE Merchants (
         'GAMBLING',
         'ATM'
     ) NOT NULL,
-    country CHAR(2) NOT NULL,
+    country ENUM('PL', 'DE', 'GB', 'US', 'FR', 'ES') NOT NULL,
     city VARCHAR(50) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
