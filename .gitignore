@@ -14,7 +14,6 @@ Thumbs.db
 ehthumbs.db
 $RECYCLE.BIN/
 
-*.csv
 *.tsv
 *.log
 *.sql.bak
