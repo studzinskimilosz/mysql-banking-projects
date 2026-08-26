@@ -34,11 +34,8 @@ A foundational database system simulating core banking operations. It manages cu
 A database system designed to track daily expenses and incomes. It systematically categorizes cash flows and uses a MySQL `VIEW` to automatically generate monthly financial summaries, simulating the core logic behind personal finance apps.
 
 ### 3. Fraud Detection System 👀 ***(start date: 25 Aug. 2026)***
-
+***(...)***
 #### ***AND MORE...***
 
 ## 🚀 How to Navigate
-Each project is contained within its own directory. Inside each folder, you will find:
-1. `schema.sql` - The DDL script defining the database structure.
-2. `mock_data.sql` - The DML script populating the tables with sample data.
-3. `README.md` - A project-specific guide explaining its logic and mechanics.
+> ❗️ Each *project* has its own instructions contained in its own *`README.md`* file.
