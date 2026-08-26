@@ -15,3 +15,6 @@ ON Transactions(merchant_id);
 
 CREATE INDEX idx_transactions_timestamp
 ON Transactions(transaction_time);
+
+CREATE INDEX idx_transactions_account_time
+ON transactions(account_id, transaction_timestamp);
