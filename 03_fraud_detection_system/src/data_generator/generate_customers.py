@@ -34,4 +34,4 @@ for i in range(100):
 
 
 df = pd.DataFrame(customers)
-df.to_csv("/Users/milosz/Projects/mysql-banking-projects/03_fraud_detection_system/data/customers.csv", index=False)
+df.to_csv("/../../data/customers.csv", index=False)
