@@ -13,10 +13,14 @@ CREATE TABLE Accounts (
     account_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT NOT NULL,
     account_number VARCHAR(26) NOT NULL UNIQUE,
-    account_type VARCHAR(50) NOT NULL,
+    account_type ENUM(
+        'CURRENT_ACCOUNT'
+        'SAVINGS_ACCOUNT'
+        'BUSSINESS_ACCOUNT'
+    ) NOT NULL,
     currency CHAR(3) NOT NULL DEFAULT 'PLN',
     balance DECIMAL(15,2) NOT NULL DEFAULT 0.00,
-    account_status ENUM('ACTIVE', 'INACTIVE'),
+    account_status ENUM('ACTIVE', 'INACTIVE') NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (customer_id)
     REFERENCES Customers(customer_id)
