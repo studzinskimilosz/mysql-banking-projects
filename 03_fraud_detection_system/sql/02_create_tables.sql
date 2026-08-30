@@ -14,8 +14,8 @@ CREATE TABLE Accounts (
     customer_id INT NOT NULL,
     account_number VARCHAR(26) NOT NULL UNIQUE,
     account_type ENUM(
-        'CURRENT_ACCOUNT'
-        'SAVINGS_ACCOUNT'
+        'CURRENT_ACCOUNT',
+        'SAVINGS_ACCOUNT',
         'BUSSINESS_ACCOUNT'
     ) NOT NULL,
     currency CHAR(3) NOT NULL DEFAULT 'PLN',
