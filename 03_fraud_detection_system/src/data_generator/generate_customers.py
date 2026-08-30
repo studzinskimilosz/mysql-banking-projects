@@ -22,6 +22,7 @@ for i in range(100):
     fake = Faker(locales[country])
 
     customer = {
+        "customer_id": i + 1,
         "first_name": fake.first_name(),
         "last_name": fake.last_name(),
         "date_of_birth": fake.date_of_birth(),
@@ -34,4 +35,4 @@ for i in range(100):
 
 
 df = pd.DataFrame(customers)
-df.to_csv("/../../data/customers.csv", index=False)
+df.to_csv("../../data/customers.csv", index=False)
