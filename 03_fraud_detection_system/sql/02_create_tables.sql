@@ -16,7 +16,7 @@ CREATE TABLE Accounts (
     account_type VARCHAR(50) NOT NULL,
     currency CHAR(3) NOT NULL DEFAULT 'PLN',
     balance DECIMAL(15,2) NOT NULL DEFAULT 0.00,
-    account_status VARCHAR(50) DEFAULT 'active',
+    account_status ENUM('ACTIVE', 'INACTIVE'),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (customer_id)
     REFERENCES Customers(customer_id)
